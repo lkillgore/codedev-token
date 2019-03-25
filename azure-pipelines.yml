@@ -9,12 +9,11 @@ trigger:
 pr:
 - master
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+jobs:
+- job: Debug
+  steps:
+  - script: echo hello from the Debug build
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-    sleep 300
-  displayName: 'Run a multi-line script'
+- job: Release
+  steps:
+  - script: echo hello from the Release build
