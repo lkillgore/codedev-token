@@ -4,10 +4,10 @@
 # https://aka.ms/yaml
 
 trigger:
-- doesnotexist
+- master
 
 pr:
-- doesnotexist
+- master
 
 jobs:
 - job: Debug
