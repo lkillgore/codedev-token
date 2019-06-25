@@ -1,0 +1,19 @@
+# Starter pipeline	
+# Start with a minimal pipeline that you can customize to build and deploy your code.	
+# Add steps that build, run tests, deploy, and more:	
+# https://aka.ms/yaml	
+
+trigger:
+- master
+
+pr:
+- master
+
+jobs:
+- job: Debug
+  steps:
+  - script: echo hello from the Debug build
+
+- job: Release
+  steps:
+  - script: echo hello from the Release build
