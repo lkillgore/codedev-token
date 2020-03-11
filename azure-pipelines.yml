@@ -13,7 +13,3 @@ jobs:
 - job: Debug
   steps:
   - script: echo hello from the Debug build
-
-- job: Release
-  steps:
-  - script: echo hello from the Release build
