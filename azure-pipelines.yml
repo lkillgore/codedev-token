@@ -11,5 +11,6 @@ pr:
 
 jobs:
 - job: Debug
+  pool: Default
   steps:
   - script: echo hello from the Debug build
